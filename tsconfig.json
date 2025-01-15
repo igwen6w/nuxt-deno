@@ -3,5 +3,11 @@
   "extends": "./.nuxt/tsconfig.json",
   "include": [
     "./types/**/*.d.ts"
-  ]
+  ],
+  "compilerOptions": {
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ]
+  }
 }

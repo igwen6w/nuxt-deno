@@ -2,12 +2,18 @@
 
 ## 开发日志
 
-### 2024-01-01
+### 2025-01-15
 - 新增联系我们页面
 - 集成天地图API框架
 - 添加公司联系信息展示
 - 实现响应式布局
 - 配置类型声明和TS支持
+
+### 2025-01-16
+- 完成天地图类型声明配置
+- 更新tsconfig.json配置
+- 优化类型声明文件结构
+- 解决模块解析问题
 
 ### 待完成
 - 获取并配置天地图API密钥
@@ -19,17 +25,7 @@
 ### 安装依赖
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+deno cache --reload deps.ts
 ```
 
 ### 开发服务器
@@ -37,17 +33,7 @@ bun install
 启动开发服务器 `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+deno task dev
 ```
 
 ### 生产环境
@@ -55,33 +41,13 @@ bun run dev
 构建生产环境应用:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+deno task build
 ```
 
 本地预览生产构建:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+deno task preview
 ```
 
 查看 [部署文档](https://nuxt.com/docs/getting-started/deployment) 获取更多信息。

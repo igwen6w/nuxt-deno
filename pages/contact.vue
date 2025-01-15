@@ -42,7 +42,6 @@
 import { onMounted } from 'vue'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
-
 onMounted(() => {
   // 天地图API初始化
   const map = new T.Map('tdt-map', {
