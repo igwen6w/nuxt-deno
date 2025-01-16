@@ -1,6 +1,7 @@
 <template>
   <div class="homepage">
     <Header />
+    <Carousel />
 
     <section class="hero">
       <div class="container">
@@ -16,6 +17,8 @@
         <p>我们是一家致力于为客户提供优质服务的企业...</p>
       </div>
     </section>
+
+    <ProductShowcase />
 
     <section id="services" class="services-section">
       <div class="container">
@@ -65,8 +68,8 @@
 <script setup lang="ts">
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
-
-// 这里可以添加页面逻辑
+import Carousel from '../components/Carousel.vue'
+import ProductShowcase from '../components/ProductShowcase.vue'
 </script>
 
 <style scoped>
